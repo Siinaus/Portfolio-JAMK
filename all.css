@@ -1,9 +1,8 @@
 .grid-container {
-  height: 200%;
   display: grid;
   grid-template-columns: 20% 50% 20%;
   grid-template-rows: 30% 30% 30%;
-  grid-gap: 1%;
+  grid-gap: 5%;
   background-color: white;
 }
 
@@ -16,7 +15,18 @@
 
 .item2 {
   grid-area: 1 / 2 / 2 / 3;
-  height: 350%;
+  height: 500%;
+}
+
+li {
+  list-style-type: none;
+  margin: 1%;
+  padding: 0;
+}
+
+ul {
+  border: deeppink solid 1px;
+  margin: 1%;
 }
 
 .item5 {
@@ -34,6 +44,7 @@
   margin: 5%;
   padding: 1%;
   text-align: center;
+  vertical-align: middle;
   font-family: Georgia, "Times New Roman", Times, serif;
   transform: translateX(0) translateY(0) rotate(45deg);
 }
