@@ -3,6 +3,42 @@ body {
   background-repeat: no-repeat;
 }
 
+.landing > #first_pic {
+  width: max-content;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.centered2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.center_button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eef2df;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 3%;
+  width: 12%;
+  height: 6%;
+  border: #eef2df solid 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .nav {
   background-color: #eef2df;
   padding: 2%;
@@ -15,6 +51,11 @@ a {
   padding-left: 10%;
   font-size: 20px;
   color: #1f2617;
+}
+
+.centered_link {
+  padding-left: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .grid-container {
