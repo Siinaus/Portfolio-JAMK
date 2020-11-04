@@ -3,104 +3,203 @@ body {
   background-repeat: no-repeat;
 }
 
-.nav {
-  background-color: #eef2df;
-  padding: 2%;
-  color: #1f2617;
-  border-radius: 1%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 a {
-  padding-left: 10%;
   font-size: 20px;
   color: #1f2617;
-}
-
-.grid-container {
-  display: grid;
-  height: 300%;
-  grid-template-columns: 28% 40% 18%;
-  grid-template-rows: 100%;
-  grid-gap: 3%;
-  margin-top: 2%;
-  margin-left: 5%;
-}
-
-.grid-container > div {
-  background-color: #eef2df;
-  text-align: center;
-  font-size: 25px;
-  border: #4d5955 solid 1px;
-  border-radius: 1%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.grid-container2 {
-  display: grid;
-  height: 300%;
-  grid-template-columns: 24% 64%;
-  grid-template-rows: 100%;
-  grid-gap: 3%;
-  margin-top: 2%;
-  margin-left: 5%;
-}
-
-.grid-container2 > div {
-  background-color: #eef2df;
-  text-align: center;
-  font-size: 25px;
-  border: #4d5955 solid 1px;
-  border-radius: 1%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.item1 {
-  font-size: 14px;
-}
-
-.item1 > p {
-  margin-bottom: 2%;
-  padding-top: -1%;
-}
-
-.item2 {
-  margin: 1%;
-}
-
-#profile {
-  margin-top: 5%;
-}
-
-#video {
-  padding: 0;
-  color: rgb(12, 151, 105);
-}
-
-#angular {
-  width: 20%;
-  height: auto;
-  float: right;
-  margin-top: -10%;
-}
-
-li {
-  list-style-type: none;
-  margin: 1%;
-  padding: 0;
-}
-
-ul {
-  border: #1f2617 solid 1px;
-  margin: 1%;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+/*Landing sivu*/
+.landing > #first_pic {
+  width: max-content;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.centered2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.center_button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eef2df;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 6%;
+  width: 12%;
+  height: 6%;
+  border: #eef2df solid 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.centered_link {
+  padding-left: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*Kaikkien sivujen navigaatio*/
+.nav {
+  background-color: #eef2df;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 3%;
+  color: #4d5955;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav > h1 {
+  margin-left: 4%;
+}
+
+.hovered_nav {
+  background-color: white;
+}
+
+.nav_button {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.nav_button:hover {
+  background-color: white;
+}
+
+.top_nav {
+  margin-top: 20%;
+}
+
+.some {
+  margin-top: 20%;
+  margin-left: 20%;
+}
+
+#linkedin {
+  width: 8%;
+  position: fixed;
+  z-index: 1;
+  top: 60%;
+  left: 5%;
+}
+
+#github {
+  width: 4.5%;
+  position: fixed;
+  z-index: 1;
+  top: 63%;
+  left: 14%;
+}
+
+/*Gridien pohja muotoilut*/
+
+.grid-container {
+  display: grid;
+  float: right;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 60% 60%;
+  grid-gap: 3%;
+  margin-top: 13%;
+  margin-left: 30%;
+}
+
+.grid-container > div {
+  background-color: #eef2df;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#oppari {
+  font-size: 17px;
+  color: rgb(10, 172, 164);
+}
+
+/*Gridien muotoilut Osaaminen-sivulle*/
+.grid-container2 {
+  display: grid;
+  float: right;
+  grid-template-columns: 40% 40% 40%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 3%;
+  margin-top: 10%;
+  margin-right: 20%;
+}
+
+.grid-container2 > div {
+  background-color: #eef2df;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#video {
+  padding: 0;
+  color: rgb(10, 172, 164);
+  font-size: 16px;
+}
+
+/*Omat tiedot-sivu*/
+.container2 {
+  background-color: #eef2df;
+  width: 60%;
+  float: right;
+  margin-top: 10%;
+  margin-right: 5%;
+  padding: 3%;
+  border-radius: 10px 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 18px;
+}
+
+.container2 > p {
+  margin-left: 3%;
+}
+
+#profile {
+  width: 20%;
+  height: auto;
+  float: right;
+  margin-top: -24%;
+  margin-right: 10%;
+  border-radius: 3%;
+}
+
+/*Webska-sivu*/
 .container {
   background-color: #eef2df;
+  width: 60%;
+  float: right;
   margin: 2% 7%;
   padding: 3%;
   border-radius: 1%;
@@ -114,4 +213,11 @@ h4 {
 
 .container > h3 {
   font-size: 20px;
+}
+
+#angular {
+  width: 20%;
+  height: auto;
+  float: right;
+  margin-top: -20%;
 }
