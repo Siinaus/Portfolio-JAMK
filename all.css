@@ -3,6 +3,14 @@ body {
   background-repeat: no-repeat;
 }
 
+a {
+  font-size: 20px;
+  color: #1f2617;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*Landing sivu*/
 .landing > #first_pic {
   width: max-content;
 }
@@ -32,25 +40,11 @@ body {
   transform: translate(-50%, -50%);
   background-color: #eef2df;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border-radius: 3%;
+  border-radius: 6%;
   width: 12%;
   height: 6%;
   border: #eef2df solid 1px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.nav {
-  background-color: #eef2df;
-  padding: 2%;
-  color: #1f2617;
-  border-radius: 1%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-a {
-  padding-left: 10%;
-  font-size: 20px;
-  color: #1f2617;
 }
 
 .centered_link {
@@ -58,14 +52,77 @@ a {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+/*Kaikkien sivujen navigaatio*/
+.nav {
+  background-color: #eef2df;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 3%;
+  color: #4d5955;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav > h1 {
+  margin-left: 4%;
+}
+
+.hovered_nav {
+  background-color: white;
+}
+
+.nav_button {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.nav_button:hover {
+  background-color: white;
+}
+
+.top_nav {
+  margin-top: 20%;
+}
+
+.some {
+  margin-top: 20%;
+  margin-left: 20%;
+}
+
+#linkedin {
+  width: 8%;
+  position: fixed;
+  z-index: 1;
+  top: 60%;
+  left: 5%;
+}
+
+#github {
+  width: 4.5%;
+  position: fixed;
+  z-index: 1;
+  top: 63%;
+  left: 14%;
+}
+
+/*Gridien pohja muotoilut*/
+
 .grid-container {
   display: grid;
   height: 300%;
-  grid-template-columns: 28% 40% 18%;
-  grid-template-rows: 100%;
+  width: 60%;
+  float: right;
+  grid-template-columns: 60% 25%;
   grid-gap: 3%;
-  margin-top: 2%;
-  margin-left: 5%;
+  margin-top: 13%;
+  margin-right: 5%;
 }
 
 .grid-container > div {
@@ -75,6 +132,7 @@ a {
   border: #4d5955 solid 1px;
   border-radius: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .grid-container2 {
@@ -110,19 +168,16 @@ a {
 }
 
 #profile {
-  margin-top: 5%;
+  width: 20%;
+  height: auto;
+  float: right;
+  margin-top: -20%;
+  margin-right: 10%;
 }
 
 #video {
   padding: 0;
   color: rgb(12, 151, 105);
-}
-
-#angular {
-  width: 20%;
-  height: auto;
-  float: right;
-  margin-top: -10%;
 }
 
 li {
@@ -140,8 +195,37 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+/*Omat tiedot-sivu*/
+.container2 {
+  background-color: #eef2df;
+  width: 60%;
+  float: right;
+  margin-top: 10%;
+  margin-right: 5%;
+  padding: 3%;
+  border-radius: 10px 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 18px;
+}
+
+.container2 > p {
+  margin-left: 3%;
+}
+
+#profile {
+  width: 20%;
+  height: auto;
+  float: right;
+  margin-top: -24%;
+  margin-right: 10%;
+  border-radius: 3%;
+}
+
+/*Webska-sivu*/
 .container {
   background-color: #eef2df;
+  width: 60%;
+  float: right;
   margin: 2% 7%;
   padding: 3%;
   border-radius: 1%;
@@ -155,4 +239,11 @@ h4 {
 
 .container > h3 {
   font-size: 20px;
+}
+
+#angular {
+  width: 20%;
+  height: auto;
+  float: right;
+  margin-top: -20%;
 }
